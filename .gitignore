@@ -1,0 +1,8 @@
+# Tool specific folders
+.dotclaude/
+.gemini/
+
+# OS metadata
+Thumbs.db
+desktop.ini
+.DS_Store
