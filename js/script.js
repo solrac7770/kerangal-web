@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
     const preloader = document.querySelector('.preloader');
     // Ensure the preloader stays for at least a moment to show the animation
     setTimeout(() => {
-        preloader.classList.add('hidden');
+        if (preloader) preloader.classList.add('hidden');
         // Enable scroll after preloader is gone (optional, if you hid overflow)
         document.body.style.overflow = 'auto';
     }, 2000);

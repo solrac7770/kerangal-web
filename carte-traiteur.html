@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte Traiteur - Restaurant Kerangal</title>
+    <link rel="stylesheet" href="css/style.css?v=3">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .carte-pages {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .carte-pages a {
+            display: block;
+        }
+
+        .carte-pages img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 15px 40px rgba(12, 42, 102, 0.2);
+        }
+
+        .carte-hint {
+            text-align: center;
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+        }
+
+        .carte-actions {
+            text-align: center;
+            margin-top: 50px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" style="background: rgba(10, 10, 10, 0.9); position: relative;">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <img src="images/logo.jpg" alt="KERANGAL" class="logo-img">
+                <span class="logo">KERANGAL</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Restaurant</a></li>
+                <li><a href="index.html#privatiser">Traiteur</a></li>
+                <li><a href="carte-traiteur.html">Carte Traiteur</a></li>
+                <li><a href="index.html#reservation" class="nav-cta">Réserver</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carte Traiteur -->
+    <section class="reservation" style="padding-top: 100px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Traiteur</span>
+                <h2 class="section-title">Notre Carte Traiteur</h2>
+                <div class="section-divider"></div>
+            </div>
+            <p class="carte-hint">Touchez une page pour l'agrandir</p>
+            <div class="carte-pages">
+                <a href="images/carte_traiteur_1.jpg" target="_blank" rel="noopener">
+                    <img src="images/carte_traiteur_1.jpg"
+                        alt="Restaurant Kerangal Traiteur : cuisine à emporter, plats familiaux, anniversaires, petits déjeuners, livraison et privatisation. Tél. 02 99 53 61 92">
+                </a>
+                <a href="images/carte_traiteur_2.jpg" target="_blank" rel="noopener">
+                    <img src="images/carte_traiteur_2.jpg"
+                        alt="Carte traiteur : spécialités bretonnes, plats traditionnels, desserts, plateaux repas, formules cocktail, buffets froids et buffets de desserts"
+                        loading="lazy">
+                </a>
+            </div>
+            <div class="carte-actions">
+                <a href="tel:0299536192" class="btn btn-primary">Commander : 02 99 53 61 92</a>
+                <a href="mailto:contact.kerangal@gmail.com" class="btn btn-primary">Nous écrire</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Restaurant Kerangal. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
